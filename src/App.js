@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './class-components';
 import { Calculator } from './calculator';
+import { EventData2 } from './event-data';
 
 //function App() {
 //  return <Button/>
@@ -9,5 +10,5 @@ import { Calculator } from './calculator';
 //export default App;
 
 export default function App(){
-  return <Calculator/>
+  return <EventData2/>
 }
