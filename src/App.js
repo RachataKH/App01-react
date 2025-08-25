@@ -1,10 +1,7 @@
 import React from 'react'
-import Button from './class-components';
-import { Calculator } from './calculator';
-import { EventData2 } from './event-data';
-import RefsArray from './refs-array';
-import Cart from './state-class';
-import MessageBox from './state-func';
+import { userContext } from './context';
+import Header2 from './context-header2'
+import Content2 from './context-content2'
 
 //function App() {
 //  return <Button/>
@@ -13,5 +10,11 @@ import MessageBox from './state-func';
 //export default App;
 
 export default function App(){
-  return <MessageBox/>
+  let [user,setUser]=React.useState('')
+  return (
+    <userContext.Provider value={[user,setUser]}>
+      <Header2/>
+      <Content2/>
+    </userContext.Provider>
+  )
 }
