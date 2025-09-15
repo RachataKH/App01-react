@@ -8,7 +8,7 @@ export default function FormText(){
         let pswd1 = textPswd1.current.value
         if(pswd1!==''&&!pswd1.match(/^[0-9a-zA-Z]+$/)){
             textPswd1.current.value = ''
-            alert('ต้องเป็น 0-9 หรือ a-z หรือ A-Z เท่านั้น')
+            alert('ต้องเป็น 0-9 หรือ A-Z หรือ a-z เท่านั้น')
         }
     }
     const onBlurPassword2 = () => {
